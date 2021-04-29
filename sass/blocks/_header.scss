@@ -1,0 +1,116 @@
+.header {
+    background: url(../../img/main.png) no-repeat center;
+    background-size: cover;
+    height: 652px;
+    max-width: 100%;
+    
+}
+.menu {
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    margin-left: 81px;
+    margin-right: 78px;
+    justify-content: space-around;
+    &__list {
+        list-style-type: none;
+        margin-right: 47px;
+    }
+   
+    &__link {
+        text-decoration: none;
+    
+        font-weight: bold;
+        color: #ffff;
+
+    }
+}
+
+.contacts {
+    display: flex;
+    &__icon {
+        width: 12.9px;
+        height: 13.78px;
+    }
+    &__phone {
+        color: #ffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 22px;
+        margin-right: 5.5px;
+    }
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+
+    &__title {
+        margin-top: 102px;
+        color: #ffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+    }
+    &__subtitle{ 
+        font-size: 21px;
+        color: #FFFFFF;
+        margin-top: 17px;
+        margin-bottom: 0px;
+    }
+}
+
+.dots {
+    margin-right: 43px;
+   
+}
+
+.btn-order {
+    background: #FEDB3F;
+    width: 156px;
+    height: 60px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 100px;
+    margin-top: 39px;
+}
+.advantages {
+    display: flex;
+    margin-top: 64px;
+    color: white;
+    &__design {
+        color: white;
+        display: flex;
+        margin-right: 30px;
+    }
+    &__materials {
+        color: white;
+        display: flex;
+        margin-right: 30px;
+    }
+    &__order {
+        color: white;
+        display: flex;
+        margin-right: 30px;
+    }
+    &__icon {
+        width: 41px;
+        height: 41px;
+        margin-right: 11px;
+    }
+    &__desc {
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}

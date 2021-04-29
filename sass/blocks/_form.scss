@@ -1,0 +1,71 @@
+.form {
+    background: url('../img/forms.png') no-repeat center;
+    background-size: cover;
+    height: 650px;
+    max-width: 100%;
+    &__title {
+        font-weight: bold;
+        font-size: 48px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 62px;
+    }
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-evenly;
+    &__left {
+        margin-left: 81px;
+        width: 462px;
+    }
+    &__right {
+        width: 450px;
+    }
+}
+
+.adress {
+    display: flex;
+}
+
+.name, .phone {
+    width: 223px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+}
+.street {
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 459.93px;
+    height: 58px;
+    
+}
+.contacts {
+    justify-content: space-evenly;
+}
+
+.number {
+    display: flex;
+    margin-top: 14px;
+}
+
+.number1 {
+    width: 106px;
+    height: 58px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 450px;
+    height: 152px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+label, .comment-name, .delete {
+    color: white;
+}

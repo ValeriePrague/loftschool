@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Alegreya Sans';
+    margin: 0 auto;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/why';
+@import 'blocks/feedback';
+@import 'blocks/form';
