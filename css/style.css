@@ -40,17 +40,18 @@ body {
 
 .contacts {
   display: flex;
+  align-items: center;
 }
 .contacts__icon {
   width: 12.9px;
   height: 13.78px;
+  margin-right: 5.53px;
 }
 .contacts__phone {
   color: #ffff;
   text-decoration: none;
   font-weight: bold;
   font-size: 22px;
-  margin-right: 5.5px;
 }
 
 .header-main {
@@ -85,6 +86,28 @@ body {
   margin-right: 43px;
 }
 
+.dots__list-item {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: white;
+  list-style: none;
+  margin-bottom: 13px;
+}
+
+.dots__list-item--active::before {
+  border-radius: 50%;
+  content: "";
+  border: 1px solid white;
+  width: 18px;
+  height: 19px;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .btn-order {
   background: #FEDB3F;
   width: 156px;
@@ -101,17 +124,7 @@ body {
   margin-top: 64px;
   color: white;
 }
-.advantages__design {
-  color: white;
-  display: flex;
-  margin-right: 30px;
-}
-.advantages__materials {
-  color: white;
-  display: flex;
-  margin-right: 30px;
-}
-.advantages__order {
+.advantages__item {
   color: white;
   display: flex;
   margin-right: 30px;
@@ -263,56 +276,75 @@ body {
   justify-content: space-evenly;
 }
 .contact-form__left {
-  margin-left: 81px;
   width: 462px;
 }
 .contact-form__right {
   width: 450px;
 }
 
-.adress {
-  display: flex;
-}
-
-.name, .phone {
-  width: 223px;
-  background: #FFFFFF;
-  border-radius: 4px;
-  height: 58px;
-  display: flex;
-  flex-direction: column;
-}
-
-.street {
-  background: #FFFFFF;
-  border-radius: 4px;
-  width: 459.93px;
-  height: 58px;
-}
-
-.contacts {
-  justify-content: space-evenly;
-}
-
-.number {
+.contact-form__row {
   display: flex;
   margin-top: 14px;
 }
 
-.number1 {
-  width: 106px;
-  height: 58px;
+.form__label {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-right: 20px;
+  color: white;
+  font-size: 18px;
+}
+
+.form__label:last-child {
+  margin-right: 0;
+}
+
+.container {
+  max-width: 938px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
   background: #FFFFFF;
+  border-radius: 4px;
+  height: 58px;
+}
+
+.form__phone {
+  border: 3px solid #FEDB3F;
   border-radius: 4px;
 }
 
-textarea {
+.form__textarea {
   width: 450px;
   height: 152px;
   background: #FFFFFF;
   border-radius: 4px;
 }
 
-label, .comment-name, .delete {
+.form__reset {
+  background: none;
+  border: none;
   color: white;
+  font-size: 18px;
+}
+
+.row-btn {
+  display: block;
+}
+
+input[type=radio]:checked:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  top: 3.5px;
+  left: 3.5px;
+  border-radius: 50%;
+  background: #FEDB3F;
 }

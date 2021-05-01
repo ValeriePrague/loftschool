@@ -28,16 +28,18 @@
 
 .contacts {
     display: flex;
+    align-items: center;
     &__icon {
         width: 12.9px;
         height: 13.78px;
+        margin-right: 5.53px;
     }
     &__phone {
         color: #ffff;
         text-decoration: none;
         font-weight: bold;
         font-size: 22px;
-        margin-right: 5.5px;
+        
     }
 }
 
@@ -72,8 +74,28 @@
 .dots {
     margin-right: 43px;
    
-}
 
+}
+.dots__list-item {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+    list-style: none;
+    margin-bottom: 13px;
+}
+.dots__list-item--active::before {
+    border-radius: 50%;
+    content: "";
+    border: 1px solid white;
+    width: 18px;
+    height: 19px;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .btn-order {
     background: #FEDB3F;
     width: 156px;
@@ -88,17 +110,7 @@
     display: flex;
     margin-top: 64px;
     color: white;
-    &__design {
-        color: white;
-        display: flex;
-        margin-right: 30px;
-    }
-    &__materials {
-        color: white;
-        display: flex;
-        margin-right: 30px;
-    }
-    &__order {
+    &__item {
         color: white;
         display: flex;
         margin-right: 30px;

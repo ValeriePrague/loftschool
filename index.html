@@ -56,20 +56,20 @@
                ЗАКАЗАТЬ
             </button>
             <div class="advantages">
-               <div class="advantages__design">
+               <div class="advantages__item">
                   <img src="icons/icon1.svg" alt="" class="advantages__icon">
                   <p class="advantages__desc">Уникальный<br> дизайн</p>
                   </img>
                </div>
 
-               <div class=" advantages__materials">
+               <div class=" advantages__item">
                   <img src="icons/icon2.svg" alt="" class="advantages__icon">
                   <p class="advantages__desc">Прочные<br>
                      материалы</p>
                   </img>
                </div>
 
-               <div class="advantages__order">
+               <div class="advantages__item">
                   <img src="icons/icon3.svg" alt="" class="advantages__icon">
                   <p class="advantages__desc">Быстрая <br>
                      доставка</p>
@@ -81,31 +81,15 @@
          </div>
          <div class="dots">
             <ul class="dots__list">
-               <li class="dots__list-item-active"><img src="icons/dots1.svg" alt="" class="dots__icon-active"></li>
-            </ul>
-            <ul class="dots__list">
-               <li class="dots__list-item"><img src="icons/dots2.svg" alt="" class="dots__icon"></li>
-            </ul>
-            <ul class="dots__list">
-               <li class="dots__list-item"><img src="icons/dots2.svg" alt="" class="dots__icon"></li>
-            </ul>
-            <ul class="dots__list">
-               <li class="dots__list-item"><img src="icons/dots2.svg" alt="" class="dots__icon"></li>
-            </ul>
-            <ul class="dots__list">
-               <li class="dots__list-item"><img src="icons/dots2.svg" alt="" class="dots__icon"></li>
-            </ul>
-            <ul class="dots__list">
-               <li class="dots__list-item"><img src="icons/dots2.svg" alt="" class="dots__icon"></li>
-            </ul>
-            <ul class="dots__list">
-               <li class="dots__list-item"><img src="icons/dots2.svg" alt="" class="dots__icon"></li>
-            </ul>
-            <ul class="dots__list">
-               <li class="dots__list-item"><img src="icons/dots2.svg" alt="" class="dots__icon"></li>
-            </ul>
-            <ul class="dots__list">
-               <li class="dots__list-item"><img src="icons/dots2.svg" alt="" class="dots__icon"></li>
+               <li class="dots__list-item dots__list-item--active"></li>
+               <li class="dots__list-item"></li>
+               <li class="dots__list-item"></li>
+               <li class="dots__list-item"></li>
+               <li class="dots__list-item"></li>
+               <li class="dots__list-item"></li>
+               <li class="dots__list-item"></li>
+               <li class="dots__list-item"></li>
+               <li class="dots__list-item"></li>
             </ul>
          </div>
       </div>
@@ -187,11 +171,11 @@
 
    <section class="form">
       <h2 class="form__title">закажите доску</h2>
-      <form class="contact-form">
+      <form class="contact-form container">
          <div class="contact-form__left">
             <div class="contact-form__row">
                <label class="form__label">Имя<input class="form__input" type="text" name="name" id="name" required placeholder="Ваше имя"></label>
-               <label class="form__label">Телефон<input class="form__input" type="tel" name="phone" required placeholder="89022348912"></label>
+               <label class="form__label">Телефон<input class="form__input form__phone" type="tel" name="phone" required placeholder="89022348912"></label>
             </div>
 
             <div class="contact-form__row">
@@ -203,7 +187,7 @@
                <label class="form__label">Квартира<input class="form__input" type="text" name="name" required placeholder=""></label>
                <label class="form__label">Этаж<input class="form__input" type="text" name="name" required placeholder=""></label>
             </div>
-
+ 
          </div>
 
          <div class="contact-form__right">
@@ -217,9 +201,9 @@
             <div class="contact-form__row">
                <label class="form__label"><input type="checkbox" value="A" name="chb1">Не перезванивать</label>
             </div>
-            <div class="contact-form__row">
-               <button class="button form__button" type="submit">Заказать</button>
-               <button class="form__reset" type="reset">Заказать</button>
+            <div class="contact-form__row contact-form__row row-btn">
+               <button class="btn-order" type="submit">Заказать</button>
+               <button class="form__reset" type="reset">Очистить</button>
             </div>
          </div>
       </form>
