@@ -12,7 +12,23 @@ body {
     font-family: 'Alegreya Sans';
     margin: 0 auto;
 }
-
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.section--type--overlay {
+    position: relative;
+}
+.section--type--overlay::before {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba($color: #000000, $alpha: .3);
+    top: 0;
+    left: 0;
+}
 
 @import 'blocks/header';
 @import 'blocks/why';

@@ -1,8 +1,4 @@
-.section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+
 .hero{
     background: url('../img/main.png') no-repeat center;
     background-size: cover;
@@ -11,6 +7,7 @@
 .header {
     padding-top: 24px;
     width: 100%;
+    z-index: 1;
 }
 
 .header__container {
@@ -19,6 +16,7 @@
 }
 .container {
     width: 100%;
+    position: relative;
 }
 .menu {
     display: flex;
@@ -72,6 +70,7 @@
     align-items: center;
     flex: 1;
     padding-bottom: 8%;
+    z-index: 1;
 }
 .header-content {
     display: flex;
@@ -97,8 +96,10 @@
 
 .dots {
     margin-right: 43px;
-   
-
+    position: fixed;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .dots__list-item {
     width: 9px;
