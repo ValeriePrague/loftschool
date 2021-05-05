@@ -4,6 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <title>Surfing</title>
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap"
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-   <section class="section hero">
+   <section class="section hero section--type--overlay">
       <header class="header">
          <div class="container header__container">
             <div class="menu__logo">
@@ -66,24 +67,8 @@
             </div>
          </div>
       </div>
-      <div class="dots">
-         <ul class="dots__list">
-            <li class="dots__list-item dots__list-item--active"></li>
-            <li class="dots__list-item"></li>
-            <li class="dots__list-item"></li>
-            <li class="dots__list-item"></li>
-            <li class="dots__list-item"></li>
-            <li class="dots__list-item"></li>
-            <li class="dots__list-item"></li>
-            <li class="dots__list-item"></li>
-            <li class="dots__list-item"></li>
-         </ul>
-      </div>
    </div>
-</section>
-
-
-
+   </section>
    <section class="section why">
       <div class="container">
          <div class="why-name">
@@ -163,7 +148,7 @@
       </div>
    </section>
 
-   <section class="section form">
+   <section class="section form section--type--overlay">
       <div class="container">
 
          <h2 class="section-title form__title">закажите доску</h2>
@@ -191,8 +176,8 @@
                   <label class="form__label">Комментарий<textarea class="form__input form__textarea" name="comment"> </textarea></label>
                </div>
                <div class="contact-form__row">
-                  <label class="form__label"><input type="radio" value="A" name="radio1">Оплата наличными</label>
-                  <label class="form__label form__label radio"><input type="radio" class="radio__item" checked value="B" name="radio1"><span class="radio__pseudo"></span>Оплата картой</label>
+                  <label class="form__label radio"><input type="radio" class="radio__item" value="A" name="radio"><span class="radio__pseudo"></span>Оплата наличными</label>
+                  <label class="form__label radio"><input type="radio" class="radio__item" checked value="B" name="radio"><span class="radio__pseudo"></span>Оплата картой</label>
                </div>
                <div class="contact-form__row">
                   <label class="form__label form__label checkbox"><input type="checkbox" class="checkbox__item" checked value="A" name="chb1"><span class="checkbox__pseudo"></span>Не перезванивать</label>
@@ -206,7 +191,19 @@
       </div>
 
    </section>
-
+   <div class="dots">
+      <ul class="dots__list">
+         <li class="dots__list-item dots__list-item--active"></li>
+         <li class="dots__list-item"></li>
+         <li class="dots__list-item"></li>
+         <li class="dots__list-item"></li>
+         <li class="dots__list-item"></li>
+         <li class="dots__list-item"></li>
+         <li class="dots__list-item"></li>
+         <li class="dots__list-item"></li>
+         <li class="dots__list-item"></li>
+      </ul>
+   </div>
 </body>
 
 </html>
