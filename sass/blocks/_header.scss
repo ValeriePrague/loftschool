@@ -5,22 +5,42 @@
     align-items: center;
 }
 .header {
-    padding-top: 24px;
+    padding-top: 1.5rem;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
+
+    @include tablets{
+        background-color: #1968B1;
+    }
+}
+
+.container {
+    width: 100%;
+    position: relative;
+
 }
 
 .header__container {
     display: flex;
     align-items: center;
+    @include tablets {
+        position: static;
+    }
+        
+    @include phones {
+        max-width: 30rem;
+        width: 20rem;
+    }
 }
-.container {
-    width: 100%;
-    position: relative;
-}
+
 .menu {
     display: flex;
     align-items: center;
+
+    @include tablets {
+        display: none;
+    }
+
     &__list {
         list-style-type: none;
         margin: 0;
@@ -31,25 +51,55 @@
    
     &__link {
         text-decoration: none;
-    
         font-weight: bold;
         color: #ffff;
 
     }
 }
+.menu_active {
+    display: block; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #313131;
+    z-index: 10;
+    & .menu__list {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        line-height: 4.5rem;
+    }
+    & .menu__list-item {
+        margin-right: 0;
+    }
+}
+
 .menu__list-item {
-    margin-right: 15px;
+    margin-right: 0.938rem;
 }
 .menu__list-item:last-child {
     margin-right: 0;
 }
-.menu__logo {
+.header__logo {
     margin-right: auto;
+    width: 3.473rem;
+    height: 2.454rem;
+    @include tablets {
+        position: relative;
+        z-index: 20;
+    }
 }
+
 .contacts {
     display: flex;
     align-items: center;
     margin-left: auto;
+    
+    @include tablets {
+        display: none;
+    }
     &__icon {
         width: 12.9px;
         height: 13.78px;
@@ -59,7 +109,7 @@
         color: #ffff;
         text-decoration: none;
         font-weight: bold;
-        font-size: 22px;
+        font-size: 1.375rem;
         
     }
 }
@@ -75,31 +125,44 @@
 .header-content {
     display: flex;
     flex-direction: column;
-
+    @include tablets {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
     &__title {
-        margin-top: 102px;
+        margin-top: 6.375rem;
+        margin-bottom: 0px;
         color: #ffff;
         text-decoration: none;
         font-weight: bold;
-        font-size: 48px;
-        line-height: 58px;
+        font-size: 3rem;
+        line-height: 3.625rem;
         text-transform: uppercase;
-        margin-bottom: 0px;
+        @include phones {
+        font-size: 2.5rem;
+        }
     }
     &__subtitle{ 
-        font-size: 21px;
+        font-size: 1.313rem;
         color: #FFFFFF;
-        margin-top: 17px;
+        margin-top: 1.063rem;
         margin-bottom: 0px;
+        @include phones {
+            font-size: 1.125rem;
+        }
     }
 }
 
 .dots {
-    margin-right: 43px;
+    margin-right: 2.688rem;
     position: fixed;
     right: 4%;
     top: 50%;
     transform: translateY(-50%);
+    @include tablets {
+        display: none;
+    }
 }
 .dots__list-item {
     width: 9px;
@@ -113,8 +176,8 @@
     border-radius: 50%;
     content: "";
     border: 1px solid white;
-    width: 18px;
-    height: 19px;
+    width: 1.125rem;
+    height: 1.188rem;
     display: block;
     position: relative;
     top: 50%;
@@ -123,32 +186,60 @@
 }
 .btn-order {
     background: #FEDB3F;
-    width: 156px;
-    height: 60px;
+    width: 9.75rem;
+    height: 3.75rem;
     text-align: center;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 100px;
-    margin-top: 39px;
+    margin-top: 2.438rem;
     border: none;
 }
 .advantages {
     display: flex;
-    margin-top: 64px;
+    margin-top: 4rem;
     color: white;
     &__item {
         color: white;
         display: flex;
-        margin-right: 30px;
+        margin-right: 1.875rem;
+        align-items: center;
+        @include tablets {
+            display: none;
+        }
     }
     &__icon {
-        width: 41px;
-        height: 41px;
-        margin-right: 11px;
+        width: 2.563rem;
+        height: 2.563rem;
+        margin-right: 0.688rem;
     }
     &__desc {
         color: white;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
+.hamburger {
+    display: none;
+    
+    @include tablets {
+        display: block;
+        position: relative;
+        z-index: 20;
+    }
+}
+.close {
+    display: none;
+    &__icon {
+        width: 20px;
+    }
+    @include tablets {
+        position: relative;
+        display: block;
+        top: 2.625rem;
+        margin-right: 2.625rem;
+        z-index: 20;
+    }
+
+}
+
