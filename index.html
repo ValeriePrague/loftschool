@@ -18,10 +18,12 @@
    <section class="section hero section--type--overlay">
       <header class="header">
          <div class="container header__container">
-            <div class="menu__logo">
-               <img class="logo" src="img/logo.svg" alt="">
+            <div class="header__logo">
+               <svg class="logo" viewBox="0 0 56 40">
+                  <use xlink:href="./sprite.svg#logo"></use>
+               </svg>
             </div>
-            <nav class="menu">
+            <nav class="menu menu_active">
                <ul class="menu__list">
                   <li class="menu__list-item"><a href="#" class="menu__link">О нас</a></li>
                   <li class="menu__list-item"><a href="#" class="menu__link">Серфборды</a></li>
@@ -33,9 +35,21 @@
                </ul>
             </nav>
             <adress class="contacts">
-               <img src="icons/call.svg" alt="call" class="contacts__icon">
+               <svg class="contacts__icon" viewBox="0 0 13 15">
+                  <use xlink:href="./sprite.svg#call"></use>
+               </svg>
                <a href="tel:+78009039090" class="contacts__phone">8 800 903 90 90</a>
             </adress>
+            <a href="#" class="hamburger">
+               <svg class="hamburger__icon" viewBox="0 0 26 24">
+                  <use xlink:href="./sprite.svg#hamburger"></use>
+               </svg>
+            </a>
+            <a hred="#" class="close">
+               <svg class="close__icon" viewBox="0 0 20 20">
+                  <use xlink:href="./sprite.svg#close"></use>
+               </svg>
+            </a>
          </div>
    </header>
    <div class="header-main container">
@@ -49,18 +63,24 @@
          </button>
          <div class="advantages">
             <div class="advantages__item">
-               <img src="icons/icon1.svg" alt="" class="advantages__icon">
+               <svg class="advantages__icon" viewBox="0 0 41 41">
+                  <use xlink:href="./sprite.svg#icon1"></use>
+               </svg>
                <p class="advantages__desc">Уникальный<br> дизайн</p>
                </img>
             </div>
-            <div class=" advantages__item">
-               <img src="icons/icon2.svg" alt="" class="advantages__icon">
+            <div class="advantages__item">
+               <svg class="advantages__icon" viewBox="0 0 41 41">
+                  <use xlink:href="./sprite.svg#icon2"></use>
+               </svg>
                <p class="advantages__desc">Прочные<br>
                   материалы</p>
                </img>
             </div>
             <div class="advantages__item">
-               <img src="icons/icon3.svg" alt="" class="advantages__icon">
+               <svg class="advantages__icon" viewBox="0 0 41 41">
+                  <use xlink:href="./sprite.svg#icon3"></use>
+               </svg>
                <p class="advantages__desc">Быстрая <br>
                   доставка</p>
                </img>
@@ -82,7 +102,9 @@
          <div class="why-content">
             <div class="why-content__item">
                <div class="why-content__icon">
-                  <img src="icons/iconfit.svg" alt="" class="icon-fit">
+                  <svg class="icon-fit" viewBox="0 0 68 68">
+                     <use xlink:href="./sprite.svg#fit"></use>
+                  </svg>
                </div>
                <h3 class="why-content__subtitle">
                   Perfect Fit
@@ -93,7 +115,9 @@
    
             <div class="why-content__item">
                <div class="why-content__icon">
-                  <img src="icons/iconstrong.svg" alt="" class="icon-strong">
+                  <svg class="icon-strong" viewBox="0 0 68 68">
+                     <use xlink:href="./sprite.svg#strong"></use>
+                  </svg>
                </div>
                <h3 class="why-content__subtitle">
                   Strong
@@ -104,7 +128,9 @@
    
             <div class="why-content__item">
                <div class="why-content__icon">
-                  <img src="icons/iconunique.svg" alt="" class="icon-unique">
+                  <svg class="icon-unique" viewBox="0 0 68 68">
+                     <use xlink:href="./sprite.svg#unique"></use>
+                  </svg>
                </div>
                <h3 class="why-content__subtitle">
                   Unique
@@ -191,19 +217,58 @@
       </div>
 
    </section>
-   <div class="dots">
-      <ul class="dots__list">
-         <li class="dots__list-item dots__list-item--active"></li>
-         <li class="dots__list-item"></li>
-         <li class="dots__list-item"></li>
-         <li class="dots__list-item"></li>
-         <li class="dots__list-item"></li>
-         <li class="dots__list-item"></li>
-         <li class="dots__list-item"></li>
-         <li class="dots__list-item"></li>
-         <li class="dots__list-item"></li>
-      </ul>
+
+<section class="section map-section">
+   <div class="map-section__wrap">
+      <img src="img/map.png" alt="" class="map">
    </div>
+   <div class="footer"> 
+      <div class="footer__contacts container">
+ 
+         <div class="contacts_left">
+            <p class="contacts_left">Москва, ул.Новый Арбат, д.31/12</p>
+            <adress class="contacts contacts__footer">
+               <svg class="contacts__icon" viewBox="0 0 13 15">
+                  <use xlink:href="./sprite.svg#footercall"></use>
+               </svg>
+               <a href="tel:+78009039090" class="contacts__phone contacts__phone-footer">8 800 903 90 90</a>
+            </adress>
+         </div>
+         <div class="social-icons">
+            <svg class="social-icon" viewBox="0 0 20 20">
+               <use xlink:href="./sprite.svg#vk"></use>
+            </svg>
+            <svg class="social-icon" viewBox="0 0 20 20">
+               <use xlink:href="./sprite.svg#fb"></use>
+            </svg>
+            <svg class="social-icon" viewBox="0 0 20 20">
+               <use xlink:href="./sprite.svg#ig"></use>
+            </svg>
+            <svg class="social-icon" viewBox="0 0 20 20">
+               <use xlink:href="./sprite.svg#tv"></use>
+            </svg>
+         </div>
+      </div>
+   </div>
+   
+</section>
+
+
+
+<div class="dots">
+   <ul class="dots__list">
+      <li class="dots__list-item dots__list-item--active"></li>
+      <li class="dots__list-item"></li>
+      <li class="dots__list-item"></li>
+      <li class="dots__list-item"></li>
+      <li class="dots__list-item"></li>
+      <li class="dots__list-item"></li>
+      <li class="dots__list-item"></li>
+      <li class="dots__list-item"></li>
+      <li class="dots__list-item"></li>
+   </ul>
+</div>
+
 </body>
 
 </html>
